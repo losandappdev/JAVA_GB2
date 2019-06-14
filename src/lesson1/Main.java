@@ -44,6 +44,7 @@ public class Main {
 
         Cat cat = new Cat();
         cat.superJump(6);
+        cat.superJumper(5);
     }
 
     final static void testInfo(int... a) {
