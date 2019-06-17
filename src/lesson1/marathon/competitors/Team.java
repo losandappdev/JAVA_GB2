@@ -1,26 +1,31 @@
 package lesson1.marathon.competitors;
 
+import javax.naming.Name;
+
 import lesson1.marathon.obstacles.Obstacle;
 
 public class Team implements Competitor{
-    private String teamName;
-    private Team[] teamMembers;
+     public String teamName;
+     public Competitor[] teamMembers;
+/** Конструктор для коменды. В конструкторе можно сразу всех участников указывать*/
+    public Team(String teamName, Competitor[] competitor) {
+        this.teamName = teamName;
+        this.teamMembers  = new Competitor[4];
+        for (int i = 0; i <4 ; i++) {
+            this.teamMembers[i] = competitor[i];
+        }
+    }
 
 
-
+/** Метод для вывода информации о членах команды, прошедших дистанцию*/
     public void teamResult(){
         for (Competitor c : teamMembers) {
             if (c.isOnDistance() == true) c.info();
         }
-        
+
     }
 
-    public Team(String teamName, Competitor[] teamMembers) {
-        this.teamName = teamName;
-        this.teamMembers = new Team[4];
-    }
-
-    @Override
+       @Override
     public void run(int dist) {
         for (Competitor c : teamMembers) {
             c.run(dist);
@@ -49,7 +54,8 @@ public class Team implements Competitor{
             }
         return true;
     }
-    @Override
+    /**Метод вывода информации обо всех членах команды.*/
+     @Override
     public void info() {
         for (Competitor c:teamMembers) {
             c.info();

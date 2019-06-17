@@ -5,6 +5,7 @@ import lesson1.marathon.competitors.Competitor;
 import lesson1.marathon.competitors.Dog;
 import lesson1.marathon.competitors.Human;
 import lesson1.marathon.competitors.Team;
+import lesson1.marathon.obstacles.Course;
 import lesson1.marathon.obstacles.Cross;
 import lesson1.marathon.obstacles.Obstacle;
 import lesson1.marathon.obstacles.Wall;
@@ -12,12 +13,15 @@ import lesson1.marathon.obstacles.Water;
 
 public class Main {
     public static void main(String[] args) {
-        Competitor[] competitors={new Human("Bob"),
-        new Cat("Vaska"), new Dog("Tuzik")};
-        Obstacle[] obstacles = {new Cross(80), new Wall(2), new Water(10)};
+//        Competitor[] competitors={new Human("Bob"),
+//        new Cat("Vaska"), new Dog("Tuzik")};
+        Obstacle[] course = {new Cross(80), new Wall(2), new Water(10)};
 
-        Team team = new Team("stronger",)
+       Team team = new Team("teamName",new Human("bob"),
+               new Human("ivan"), new Cat("Vaska"), new Dog("Tuzik"));
 
+        team.info();
+        course.doIt(teamMember);
 //        for (Competitor c:competitors) {
 //            for (Obstacle o:obstacles) {
 //                o.doIt(c);
