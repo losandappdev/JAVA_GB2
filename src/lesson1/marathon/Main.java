@@ -15,13 +15,17 @@ public class Main {
     public static void main(String[] args) {
 //        Competitor[] competitors={new Human("Bob"),
 //        new Cat("Vaska"), new Dog("Tuzik")};
-        Obstacle[] course = {new Cross(80), new Wall(2), new Water(10)};
+        Obstacle[] obstacles = new Obstacle[]{new Cross(380), new Wall(2), new Water(10)};
 
+        Course course = new Course(obstacles);
        Team team = new Team("teamName",new Human("bob"),
                new Human("ivan"), new Cat("Vaska"), new Dog("Tuzik"));
 
-        team.info();
-        course.doIt(teamMember);
+//        team.info();
+        course.start(team);
+        team.teamResult();
+
+
 //        for (Competitor c:competitors) {
 //            for (Obstacle o:obstacles) {
 //                o.doIt(c);

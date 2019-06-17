@@ -3,15 +3,22 @@ package lesson1.marathon.obstacles;
 import lesson1.marathon.competitors.Competitor;
 import lesson1.marathon.competitors.Team;
 
-public class Course extends Obstacle {
+public class Course {
     /**Массив препятствий*/
-    Obstacle[] course = new Obstacle[]{new Cross(80), new Wall(2), new Water(10)};
+    Obstacle[] course ;
 
+    public Course(Obstacle[] course) {
+        this.course = course;
+    }
 
-    @Override
-    public void doIt(Competitor competitor) {
-
-
+    public void start(Team team) {
+        for (Competitor c:team.getTeamMembers()) {
+            for (Obstacle o:course) {
+                o.doIt(c);
+                if(!c.isOnDistance()){
+                    break;
+                }
+            }
         }
     }
 }
