@@ -42,8 +42,9 @@ public class Main {
 //        ((BigBox)box).info();
 //
 
-        Cat cat = new Cat();
-        cat.superJump(6);
+//        Cat cat = new Cat();
+//        cat.superJump(6);
+//        cat.superJumper(5);
     }
 
     final static void testInfo(int... a) {
