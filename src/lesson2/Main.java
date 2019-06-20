@@ -2,10 +2,10 @@ package lesson2;
 
 public class Main {
     public static void main(String[] args) {
-        String[][] array = {{"2","2","2","2"},
-                            {"2","2","2","2"},
-                            {"2","2","2","2"},
-                            {"2","2","2","2"}};
+//        String[][] array = {{"2","2","2","2"},
+//                            {"2","2","2","2"},
+//                            {"2","2","2","2"},
+//                            {"2","2","2","2"}};
 
 //        String[][] array = {{"1","1","1","1"},
 //                            {"1","1","1","1"},
@@ -17,10 +17,10 @@ public class Main {
 //                            {"1","1","1","1"},
 //                            {"1","1","1"}};
 
-//        String[][] array = {{"1","1","1","1"},
-//                            {"1","1","1","1"},
-//                            {"1","m","1","1"},
-//                            {"1","1","1","1"}};
+        String[][] array = {{"1","1","1","1"},
+                            {"1","1","1","1"},
+                            {"1","m","1","1"},
+                            {"1","1","1","1"}};
 
 
         try {
@@ -30,11 +30,11 @@ public class Main {
         }
     }
 
-    public static  void summArray(String[][] array) throws MyArraySizeException {
+    public static  void summArray(String[][] array) throws MyArraySizeException, MyArrayDataException {
 
         int summ = 0;
         for (String[] arr: array) {
-           if (arr.length < 4){throw  new MyArraySizeException("Заданный двумерный строковый массив соответствует размеру 4х4", array); }
+           if (arr.length != 4){throw  new MyArraySizeException("Заданный двумерный строковый массив соответствует размеру 4х4", array); }
         }
         if (array.length != 4) {
             throw  new MyArraySizeException("Заданный двумерный строковый массив размером не соответствует размеру 4х4", array);
