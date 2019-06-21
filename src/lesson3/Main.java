@@ -20,9 +20,10 @@ public class Main {
                 "Конфетки","Телефон","Дела","Семья","Привычка","Судьба","Ручка","Взгляд","Кровать","Выбор",
                 "Институт","Мечты","Институт","Улыбка","Глаза","Дом","Автомобиль"};
 
-        uniqueWords(arr);
+//        uniqueWords(arr);
 
-//        System.out.println(words);
+            TeleDirectory teleDirectory = new TeleDirectory();
+            teleDirectory.add
 
 
     }
