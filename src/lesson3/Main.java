@@ -16,9 +16,9 @@ import lesson1.marathon.obstacles.Course;
 public class Main {
     public static void main(String[] args) {
 //        Random rnd = new Random();
-        String[] arr = new String[]{"Друзья","Игра","Радость","Успех","Деньги","Погода",
+        String[] arr = new String[]{"Друзья","Игра","Радость","Успех","Дела","Погода",
                 "Конфетки","Телефон","Дела","Семья","Привычка","Судьба","Ручка","Взгляд","Кровать","Выбор",
-                "Институт","Мечты","Смех","Улыбка","Глаза","Взгляд","Смех"};
+                "Институт","Мечты","Институт","Улыбка","Глаза","Дом","Автомобиль"};
 
         uniqueWords(arr);
 
@@ -34,21 +34,19 @@ public class Main {
         int count;
 //        Iterator<String> wordsIterator = words.iterator();
 
-        for (int i = words.size() - 2; i > 0; i--) {
+        for (int i = words.size() - 1; i > 0; i--) {
             count = 1;
 //            System.out.println(words.get(i));
             for (int j = i-1; j > -1; j--) {
-//                System.out.println(words.get(i)+ "  " + words.get(j));
                 if (words.get(i).equals(words.get(j))){
 
-//                    System.out.println(words.get(i)+ "  " + words.get(j));
-//                    words.remove(j);
+                    words.remove(j);
+                    i-=1;
                     count +=1;
 
                 }
             }
-//            words.remove(i);
-            System.out.println(words.get(i) + "  " + count);
+            System.out.println("Слов  " + words.get(i) + "  в массиве " + count + " шт.");
         }
     }
 }
