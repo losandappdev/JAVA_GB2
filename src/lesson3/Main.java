@@ -20,26 +20,36 @@ public class Main {
 //        Random rnd = new Random();
         String[] arr = new String[]{"Друзья","Игра","Радость","Успех","Дела","Погода",
                 "Конфетки","Телефон","Дела","Семья","Привычка","Судьба","Ручка","Взгляд","Кровать","Выбор",
-                "Институт","Мечты","Институт","Улыбка","Глаза","Дом","Автомобиль"};
+                "Институт","Мечты","Институт","Улыбка","Глаза","Дом","Автомобиль","Автомобиль"};
+        /**Задание 1.*/
+        uniqueWords(arr);
 
-//        uniqueWords(arr);
+        /**Задание 2.*/
 
-         TeleDirectory teleDirectory = new TeleDirectory();
+        TeleDirectory teleDirectory = new TeleDirectory();
 
-        teleDirectory.add("Васин", 89245558899);
-        teleDirectory.add("Милонов", 89525654787);
-        teleDirectory.add("Смирнов", 89116547898);
-        teleDirectory.add("Минц", 89632564578);
-        teleDirectory.add("Ротенберг", 89457897878);
-        teleDirectory.add("Потанин ", 89551234565);
-        teleDirectory.add("Милонов", 89784561232);
-        teleDirectory.add("Абрамович", 89743574562);
-        teleDirectory.add("Матвиенко", 97841234598);
+        teleDirectory.add("Васин", 5558899);
+        teleDirectory.add("Виленкин", 5654787);
+        teleDirectory.add("Милонов", 6547898);
+        teleDirectory.add("Абрамович", 2564578);
+        teleDirectory.add("Ротенберг", 7897878);
+        teleDirectory.add("Потанин ", 1234565);
+        teleDirectory.add("Милонов", 4561232);
+        teleDirectory.add("Абрамович", 3574562);
+        teleDirectory.add("Сечин", 1111111);
+        teleDirectory.add("Миллер", 1234598);
+        teleDirectory.add("Матвиенко", 1234598);
+        teleDirectory.add("Усманов", 2222222);
+        teleDirectory.add("Виленкин", 3333333);
 
-        System.out.println(teleDirectory.get("antonyan"));
-        System.out.println(teleDirectory.get("igoryan"));
-        System.out.println(teleDirectory.get("bobov"));
-        System.out.println(teleDirectory.get("smetanov"));
+        System.out.println(teleDirectory.get("Васин"));
+
+        System.out.println(teleDirectory.get("Милонов"));
+        System.out.println(teleDirectory.get("Абрамович"));
+        System.out.println(teleDirectory.get("Матвиенко"));
+        System.out.println(teleDirectory.get("Ротенберг"));
+        System.out.println(teleDirectory.get("Виленкин"));
+        System.out.println(teleDirectory.get("Усманов"));
 
     }
 

@@ -17,6 +17,7 @@ public class TeleDirectory {
 
     public void add(String name, Integer phoneNumber){
         if (teleDirectory.containsKey(name)) {
+            pNumber = teleDirectory.get(name);
             pNumber.add(phoneNumber);
             teleDirectory.put(name,pNumber);
         } else {
@@ -26,7 +27,7 @@ public class TeleDirectory {
         }
     }
 
-    public Iterable<Integer> get(String name) {
+    public ArrayList<Integer> get(String name) {
         return teleDirectory.get(name);
     }
 }
