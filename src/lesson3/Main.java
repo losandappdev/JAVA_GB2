@@ -1,5 +1,6 @@
 package lesson3;
 
+import com.sun.org.apache.bcel.internal.generic.NEW;
 import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
 
 import java.security.PublicKey;
@@ -8,6 +9,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.Random;
+import java.util.TreeMap;
 
 import javax.naming.Name;
 
@@ -22,9 +24,22 @@ public class Main {
 
 //        uniqueWords(arr);
 
-            TeleDirectory teleDirectory = new TeleDirectory();
-            teleDirectory.add
+         TeleDirectory teleDirectory = new TeleDirectory();
 
+        teleDirectory.add("Васин", 89245558899);
+        teleDirectory.add("Милонов", 89525654787);
+        teleDirectory.add("Смирнов", 89116547898);
+        teleDirectory.add("Минц", 89632564578);
+        teleDirectory.add("Ротенберг", 89457897878);
+        teleDirectory.add("Потанин ", 89551234565);
+        teleDirectory.add("Милонов", 89784561232);
+        teleDirectory.add("Абрамович", 89743574562);
+        teleDirectory.add("Матвиенко", 97841234598);
+
+        System.out.println(teleDirectory.get("antonyan"));
+        System.out.println(teleDirectory.get("igoryan"));
+        System.out.println(teleDirectory.get("bobov"));
+        System.out.println(teleDirectory.get("smetanov"));
 
     }
 
