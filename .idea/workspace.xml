@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="850a1fee-954f-4051-a7ed-7a61d680ef41" name="Default Changelist" comment="" />
+    <list default="true" id="850a1fee-954f-4051-a7ed-7a61d680ef41" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson5/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson5/Main.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,14 +62,46 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1420898314">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="664" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="664" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lesson3/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/lesson5/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="1224">
+              <caret line="88" column="3" selection-start-line="88" selection-start-column="3" selection-end-line="88" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#firstArray#0;class#Main#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,6 +169,7 @@
         <option value="$PROJECT_DIR$/src/lesson2/Main.java" />
         <option value="$PROJECT_DIR$/src/lesson3/TeleDirectory.java" />
         <option value="$PROJECT_DIR$/src/lesson3/Main.java" />
+        <option value="$PROJECT_DIR$/src/lesson5/Main.java" />
       </list>
     </option>
   </component>
@@ -149,6 +185,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,7 +203,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -193,20 +229,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (5)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson1.enums.Main" />
-      <module name="java_2_13062019" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson1.enums.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main (6)">
     <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson1.inner.Main" />
       <module name="java_2_13062019" />
@@ -259,12 +282,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson1.marathon.Main" />
+    <configuration name="Main (6)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson5.Main" />
       <module name="java_2_13062019" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson1.marathon.competitors.*" />
+          <option name="PATTERN" value="lesson5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -273,19 +296,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.Main (3)" />
       <item itemvalue="Application.Main (4)" />
       <item itemvalue="Application.Main (5)" />
+      <item itemvalue="Application.Main (6)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (6)" />
         <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -420,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561152445421</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Third task of java second course.Collections.">
+      <created>1561817313905</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1561817313908</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -428,8 +458,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.121673" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.121673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -438,7 +469,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27320954" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27320954" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -750,8 +781,19 @@
     <entry file="file://$PROJECT_DIR$/src/lesson3/TeleDirectory.java" />
     <entry file="file://$PROJECT_DIR$/src/lesson3/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="374">
+          <caret line="35" column="47" lean-forward="true" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson5/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="88" column="3" selection-start-line="88" selection-start-column="3" selection-end-line="88" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#firstArray#0;class#Main#0" />
+          </folding>
         </state>
       </provider>
     </entry>
