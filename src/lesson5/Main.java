@@ -59,26 +59,28 @@ public class Main {
                 a1[i] = (float) (arr[i] * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) * Math.cos(0.4f + i / 2));
             }
         });
-        try {
-            t1.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
 
         Thread t2 = new Thread(() -> {
             for (int i = 0; i < h; i++) {
                 a2[i] = (float) (arr[i] * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) * Math.cos(0.4f + i / 2));
             }
         });
+
+        long x = System.currentTimeMillis();
+        try {
+            t1.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        t1.start();
+        long y = System.currentTimeMillis();
+        t2.start();
         try {
             t2.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        long x = System.currentTimeMillis();
-        t1.start();
-        long y = System.currentTimeMillis();
-        t2.start();
         long z = System.currentTimeMillis();
 
         long c = System.currentTimeMillis();
@@ -90,7 +92,7 @@ public class Main {
         System.currentTimeMillis();
 //        long t = (b - a) + (y - x) + (z - y) + (d - c);
 //        System.out.println(" Время выполнения в два потока \n(время разбивки массива на 2, просчета каждого из двух массивов и склейки.) " + t);
-        System.out.println(" Время выполнения в два потока 2 без " + ((b - a) +  (d - c)));
+        System.out.println(" Время выполнения в два потока 2 без " +  (z - x));
 
 
         System.out.println(" Время выполнения в два потока " + (d - a));
