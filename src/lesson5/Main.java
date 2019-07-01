@@ -90,6 +90,7 @@ public class Main {
 
 
         System.currentTimeMillis();
+
 //        long t = (b - a) + (y - x) + (z - y) + (d - c);
 //        System.out.println(" Время выполнения в два потока \n(время разбивки массива на 2, просчета каждого из двух массивов и склейки.) " + t);
         System.out.println(" Время выполнения в два потока 2 без " +  (z - x));
