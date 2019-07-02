@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="850a1fee-954f-4051-a7ed-7a61d680ef41" name="Default Changelist" comment="">
+    <list default="true" id="850a1fee-954f-4051-a7ed-7a61d680ef41" name="Default Changelist" comment="Five task of java second course.Threds. Переделано по потокам. С i непонял, длинна двух частей одинакова.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson7/Sever.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson6/Sever.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,12 +74,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="2" />
+          <entry key="java" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="2" />
+          <entry key="JAVA" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -102,24 +103,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lesson5/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="92" selection-start-line="92" selection-end-line="92" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#211#806#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lesson7/Sever.java">
+        <entry file="file://$PROJECT_DIR$/src/Lesson6/Sever.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+            <state relative-caret-position="298">
+              <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,7 +131,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Task5" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
   </component>
@@ -192,6 +180,7 @@
         <option value="$PROJECT_DIR$/src/lesson3/Main.java" />
         <option value="$PROJECT_DIR$/src/lesson5/Main.java" />
         <option value="$PROJECT_DIR$/src/lesson7/Sever.java" />
+        <option value="$PROJECT_DIR$/src/Lesson6/Sever.java" />
       </list>
     </option>
   </component>
@@ -219,6 +208,12 @@
               <item name="java_2_13062019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="java_2_13062019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_2_13062019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson7" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -236,6 +231,151 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/ActionGo.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/BigBox.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/Box.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/CanJump.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/CanRun.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/Cat.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/Dog.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/Main.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/SuperBox.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/Tools.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/enums/Fruit.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/enums/Main.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/inner/Main.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/inner/Outer$1LocalClass.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/inner/Outer$Inner.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/inner/Outer$StatInner.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/inner/Outer.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/marathon/Main.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/marathon/competitors/Animal.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/marathon/competitors/Cat.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/marathon/competitors/Competitor.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/marathon/competitors/Dog.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/marathon/competitors/Human.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/marathon/competitors/Team.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/marathon/obstacles/Course.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/marathon/obstacles/Cross.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/marathon/obstacles/Obstacle.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/marathon/obstacles/Wall.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson1/marathon/obstacles/Water.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson2/Main.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson2/MyArrayDataException.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson2/MyArraySizeException.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson3/Main.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/java_2_13062019/lesson3/TeleDirectory.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/lesson5/Main.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -513,7 +653,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.16929133" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -523,7 +662,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.27320954" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39920425" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -845,7 +984,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson5/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
+        <state relative-caret-position="1292">
           <caret line="92" selection-start-line="92" selection-end-line="92" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -854,10 +993,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson7/Sever.java">
+    <entry file="file://$PROJECT_DIR$/src/Lesson6/Sever.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        <state relative-caret-position="298">
+          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

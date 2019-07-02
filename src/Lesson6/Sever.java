@@ -1,4 +1,4 @@
-package lesson7;
+package Lesson6;
 
 import com.sun.corba.se.spi.activation.Server;
 
