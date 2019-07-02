@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="850a1fee-954f-4051-a7ed-7a61d680ef41" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson5/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson5/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,46 +64,64 @@
     <session id="-1420898314">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.59" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="java" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="759" />
-          <entry key="txt" value="10" />
+          <entry key="java" value="984" />
+          <entry key="txt" value="101" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="759" />
-          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="JAVA" value="984" />
+          <entry key="PLAIN_TEXT" value="101" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.create.new" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lesson5/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="92" column="89" selection-start-line="92" selection-start-column="89" selection-end-line="92" selection-end-column="89" />
+            <state relative-caret-position="317">
+              <caret line="92" selection-start-line="92" selection-end-line="92" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#211#806#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lesson7/Sever.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="571">
+              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,7 +143,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Task5" />
       </map>
     </option>
   </component>
@@ -174,14 +191,13 @@
         <option value="$PROJECT_DIR$/src/lesson3/TeleDirectory.java" />
         <option value="$PROJECT_DIR$/src/lesson3/Main.java" />
         <option value="$PROJECT_DIR$/src/lesson5/Main.java" />
+        <option value="$PROJECT_DIR$/src/lesson7/Sever.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="255" />
-    <option name="y" value="112" />
-    <option name="width" value="1041" />
-    <option name="height" value="851" />
+    <option name="width" value="535" />
+    <option name="height" value="870" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -190,6 +206,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,17 +219,10 @@
               <item name="java_2_13062019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="java_2_13062019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java_2_13062019" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson5" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -474,17 +484,38 @@
       <option name="project" value="LOCAL" />
       <updated>1561824961463</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Five task of java second course.Threds.">
+      <created>1561991510070</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1561991510070</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Five task of java second course.Threds.">
+      <created>1561991765422</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1561991765422</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Five task of java second course.Threds. Переделано по потокам. С i непонял, длинна двух частей одинакова.">
+      <created>1561991858616</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1561991858616</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="10808000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="886" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.121673" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16929133" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -493,7 +524,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27320954" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27320954" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39920425" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -584,7 +615,8 @@
     <MESSAGE value="Second task of java second course.Exeptions." />
     <MESSAGE value="Third task of java second course.Collections." />
     <MESSAGE value="Five task of java second course.Threds." />
-    <option name="LAST_COMMIT_MESSAGE" value="Five task of java second course.Threds." />
+    <MESSAGE value="Five task of java second course.Threds. Переделано по потокам. С i непонял, длинна двух частей одинакова." />
+    <option name="LAST_COMMIT_MESSAGE" value="Five task of java second course.Threds. Переделано по потокам. С i непонял, длинна двух частей одинакова." />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Object.java" />
@@ -813,11 +845,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson5/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="92" column="89" selection-start-line="92" selection-start-column="89" selection-end-line="92" selection-end-column="89" />
+        <state relative-caret-position="317">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#211#806#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson7/Sever.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
