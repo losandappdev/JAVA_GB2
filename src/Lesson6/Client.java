@@ -33,7 +33,8 @@ public class Client {
                         try {
                             out.writeUTF(strIn);
                         } catch (IOException e) {
-                            e.printStackTrace();
+                            System.out.println("Reboot server.");
+//                            e.printStackTrace();
                         }
                     }
                 }
@@ -42,15 +43,18 @@ public class Client {
             Thread inner = new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    try {
-                        while (true){
-                            String input = in.readUTF();
-                            System.out.println(input);
-                        }
+                  while (true) {
+                      try {
+                          String input = in.readUTF();
+                          System.out.println(input);
 
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+
+                      } catch (IOException e) {
+//                          e.printStackTrace();
+                          System.out.println("Server disconect.");
+                          break;
+                      }
+                  }
                 }
             });
 

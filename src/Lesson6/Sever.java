@@ -35,7 +35,8 @@ public class Sever {
                         try {
                             out.writeUTF(strIn);
                         } catch (IOException e) {
-                            e.printStackTrace();
+                            System.out.println("Reboot client.");
+//                            e.printStackTrace();
                         }
                     }
                 }
@@ -49,7 +50,9 @@ public class Sever {
                             String input = in.readUTF();
                             System.out.println(input);
                         } catch (IOException e) {
-                            e.printStackTrace();
+//                            e.printStackTrace();
+                            System.out.println("Client disconect.");
+                            break;
                         }
                     }
 
