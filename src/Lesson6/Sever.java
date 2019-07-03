@@ -35,7 +35,8 @@ public class Sever {
                         try {
                             out.writeUTF(strIn);
                         } catch (IOException e) {
-                            System.out.println("Reboot client.");
+                            System.out.println("Disconect.");
+                            break;
 //                            e.printStackTrace();
                         }
                     }

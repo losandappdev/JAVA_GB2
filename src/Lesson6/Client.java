@@ -33,7 +33,8 @@ public class Client {
                         try {
                             out.writeUTF(strIn);
                         } catch (IOException e) {
-                            System.out.println("Reboot server.");
+                            System.out.println("Disconect.");
+                            break;
 //                            e.printStackTrace();
                         }
                     }
