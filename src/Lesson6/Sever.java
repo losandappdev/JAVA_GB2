@@ -2,7 +2,10 @@ package Lesson6;
 
 import com.sun.corba.se.spi.activation.Server;
 
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
@@ -12,18 +15,59 @@ public class Sever {
         ServerSocket server = null;
         Socket socket = null;
 
+        DataInputStream in;
+        DataOutputStream out;
+
+
+
         try {
-            server =  new ServerSocket(8083);
+            server =  new ServerSocket(8189);
             System.out.println("Start sever!");
             socket = server.accept();
             System.out.println("Join client");
 
-            Scanner sc = new Scanner(socket.getInputStream());
+            in = new DataInputStream(socket.getInputStream());
+            out = new DataOutputStream(socket.getOutputStream());
+            Scanner sc = new Scanner(System.in);
 
-            while (true){
-                String str = sc.nextLine();
-                System.out.println(str);
-            }
+
+
+//            Scanner in = new Scanner(socket.getInputStream());
+
+            Thread outer = new Thread(new Runnable() {
+                @Override
+                public void run() {
+//                    Scanner sc = new Scanner(System.in);
+                    while (true){
+                        String strIn = sc.nextLine();
+//                        System.out.println(strIn);
+                        try {
+                            out.writeUTF("s->c" + strIn);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            });
+
+            Thread inner = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    while (true){
+                        try {
+                            String input = in.readUTF();
+                            System.out.println(input);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+
+                }
+            });
+            outer.start();
+            inner.start();
+
+
 
         } catch (IOException e) {
             e.printStackTrace();
