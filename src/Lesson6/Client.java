@@ -57,6 +57,14 @@ public class Client {
             outer.start();
             inner.start();
 
+            try {
+                outer.join();
+                inner.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -1,11 +1,8 @@
 package Lesson6;
 
-import com.sun.corba.se.spi.activation.Server;
-
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
@@ -18,8 +15,6 @@ public class Sever {
         DataInputStream in;
         DataOutputStream out;
 
-
-
         try {
             server =  new ServerSocket(8189);
             System.out.println("Start sever!");
@@ -30,10 +25,6 @@ public class Sever {
             out = new DataOutputStream(socket.getOutputStream());
             Scanner sc = new Scanner(System.in);
 
-
-
-//            Scanner in = new Scanner(socket.getInputStream());
-
             Thread outer = new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -42,7 +33,7 @@ public class Sever {
                         String strIn = sc.nextLine();
 //                        System.out.println(strIn);
                         try {
-                            out.writeUTF("s->c" + strIn);
+                            out.writeUTF(strIn);
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
@@ -66,6 +57,13 @@ public class Sever {
             });
             outer.start();
             inner.start();
+
+            try {
+                outer.join();
+                inner.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
 
 
 
