@@ -31,7 +31,7 @@ public class Client {
                     while (true){
                         String strIn = sc.nextLine();
                         try {
-                            out.writeUTF(strIn);
+                            out.writeUTF("Client: " + strIn);
                         } catch (IOException e) {
                             System.out.println("Disconect.");
                             break;

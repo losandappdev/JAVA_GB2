@@ -33,7 +33,7 @@ public class Sever {
                         String strIn = sc.nextLine();
 //                        System.out.println(strIn);
                         try {
-                            out.writeUTF(strIn);
+                            out.writeUTF("Server: " + strIn);
                         } catch (IOException e) {
                             System.out.println("Disconect.");
                             break;
